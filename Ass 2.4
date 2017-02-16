@@ -1,0 +1,96 @@
+1.Explain hadoop in layman's terms:
+         Hadoop consists of two components
+                    a)HDFS
+                    b)Map Reduce
+         a)HDFS:
+                It is the default storage layer of hadoop.It is deployed on commodity hardware.
+                It is made fault tolerant.
+                It stores a large amount of data placed in multiple commodity hardware.
+                All the nodes are connected and HDFS replicates each data instance as three copies.
+                HDFS is written in JAVA.
+                It is a write once read many times model.
+                Data can be accessed through MapReduce Processing.
+                Datanodes store files within blocks.Namenode manages and regulates access to files.
+          b)Map Reduce:
+                It enables processing of large unstructured data across slave machines
+                It is composed of Jobtracker and Tasktracker.
+                Jobtracker is the master node that manages all resources in the cluster.It finds the suitable Tasktracker toexecute tasks.
+                Tasktracker is deployed in commodity machines.It is always in contact with jobtracker and shows the progress of the task.
+                tasktracker is also fault tolerant.when one tasktracker fails,jobtasker will assign responsiblity to another node.
+                1) PIG:
+                       It is a platform for processing and analysing large data sets.
+                       It interacts with the data stored in the cluster.
+                       Pig uses a simple SQL-like scripting language.The language is called Pig latin.
+                       Pig is used to build more complex applications
+                       Pig works with structured and unstructured data and stores the results in Hadoop Distributed File System.
+                2)HIVE:
+                      It is a tool to process structrured data in hadoop.
+                      Querying and analysing is easier in hive
+                      It uses Hive Query Language or HiveQL to extract data from hadoop
+                      Hive processor converts most of its queries into a Map Reduce code.
+                      
+  2.Components of hadoop framework:
+             Hadoop framework compromises of HDFS,Map Reduce,YARN etc
+             HDFS:
+                  HDFS is hadoop distributed file system.
+                  The commodity hardwares are connected and they are taken in clusters.
+                  Data is stored in different clusters.
+                  HDFS operates on a Master-Slave architecture model
+                  The NameNode acts as the master node for keeping a track of the storage cluster. 
+                  The DataNode acts as a slave node.
+                  HDFS stores both structured and unstructured data
+             Map Reduce:
+                  It is the processing component of the hadoop framework
+                  It process both structured and unstructured data from the clusters.
+                  It is composed of Jobtracker and Tasktracker.Jobtracker is the master node
+                  Tasktracker is deployed in commodity machines. 
+                  PIG is a platform for processing and analysing large data sets.The language is called Pig latin.
+                  It is a tool to process structrured data in hadoop.It uses Hive Query Language or HiveQL to extract data from hadoop.
+             YARN:
+                   It is the prerequisite for the hadoop providing resource management and a platform to perform consistent operations,
+                   security and data governance.Simply it is Cluster resource management
+                   YARN allows multiple access engines to use Hadoop as the common standard for batch,interactive and real-time engines that can simultaneously access the same data set.
+                   Two important elements are:
+                        1).The Resource Manager (one per cluster) is the master. It knows the location of slaves and the resources they have. 
+                           It runs several services, the most important is the Resource Scheduler which decides how to assign the resources.
+                        2)The Node Manager (many per cluster) is the slave of the infrastructure. 
+                          Periodically, it sends an heartbeat to the Resource Manager. 
+                          Each Node Manager offers some resources to the cluster. 
+                   The application startup process is 
+                        1) A client submits an application to the Resource Manager
+                        2) The Resource Manager allocates a container
+                        3) the Resource Manager contacts the related Node Manager
+                        4) The Node Manager launches the container
+                        5) The Container executes the Application Master
+                        
+3)Reasons to learn BigData technologies
+                 Business Reasons:
+                       Data is the current oil.
+                       In this competitive world,top organisations are analysing data to identify new market opportunities
+                       Every sector is using BigData currently.
+                       It decides the future of the company.
+                       People who are well skilled in bigdata takes the main decisons of the organisation 
+                       Core decisions are taken based on the data analysed using bigdata technology.\
+                 Personal reasons:
+                       IT industry has lot of job openings for the big data professionals
+                       According to forbes,the salary for the professionsals with big data expertise is  $124,000 a year.
+                       The demand for bigdata experts is high but the supply is low
+                       So learning bigdata and sharpening the skill will definately helps in the development of an individuals growth and also economical growth
+                       Also working with data would be more exciting.
+                       
+                       
+          
+                       
+                       
+
+                         
+                      
+                       
+                         
+                
+                
+                
+                
+                
+              
+                
